@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #FFD900;
+    padding: 30px;
+}
+
+#container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 45vw;
+    align-items: center;
+    margin: 0;    
+}
+
+
+#textarea{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px 15px 20px;
+    font-size: 29px;
+    font-weight: 400;
+    background-color: #514988;
+    margin: 0;
+    margin-right: 25px;
+    padding: 55px 15px 55px 15px;
+    color: white;
+}
+
+#textarea h1{
+    color: #F3C61F;
+    font-size: 70px;
+    margin: 0;
+}
+
+
+#countdown{
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    columns: auto;   
+}
+
+#tempo{
+    color: #514988;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12vw;
+    font-size: 50px;
+    
+}
+
+#tempo h1{
+    margin: 0;
+}
+
+#maiorccxp{
+    margin: 0;
+    color: #E33881;
+    font-size: 30px;
+}
+
+#video{
+    margin-top: 55px;
+}
+
+footer h2{
+    color: #F3C61F;
+    margin-left: 100px;
+}
+
+
+#ingressos{
+    display: flex;
+    margin: 10px 0px 30px 50px
+}
+
+#button{
+    width: 596px;
+    height: 148px;
+    border: none;
+    border-radius: 10px;
+    background-color: #514988;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-left: 175px;
+    margin-top: 30px;
+}
