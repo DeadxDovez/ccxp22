@@ -1,32 +1,30 @@
-const dias = document.getElementById("dia");
-const horas = document.getElementById("hora");
-const minutos = document.getElementById("minuto");
-const segundos = document.getElementById("segundo");
+const dia = document.getElementById('dia')
+const hora = document.getElementById('hora')
+const minuto = document.getElementById('minuto')
+const segundo = document.getElementById('segundo')
 
-const lancamento = "17 oct 2023"
+const lancamento = '17 oct 2023'
 
 function countdown(){
-    const datalancamento = new Date(lancamento);
-    const hoje = new Date();
-    const segundosTotais = (datalancamento - hoje)/1000;
+  const datalance = new Date(lancamento)
+  const hoje = new Date()
 
-    const finalDias = math.floor(segundosTotais / 60 / 60 / 24);
-    const finalHoras = math.floor(segundosTotais / 60 / 60 ) % 24;
-    const finalMinutos = math.floor(segundosTotais / 60 ) % 24;
-    const finalSegundos = math.floor(segundosTotais) % 60;
+  const segtotal = (datalance - hoje)/1000;
 
-    dias.innerHTML = `${finalDias}D`
-    horas.innerHTML = formatoTempo (`${finalHoras}H`);
-    minutos.innerHTML = formatoTempo (`${finalMinutos}M`);
-    segundos.innerHTML = formatoTempo (`${finalSegundos}S`);
+  const finalDias =  Math.floor(segtotal / 60 / 60 / 24);
+  const finalHoras = Math.floor(segtotal / 60 / 60) %24;
+  const finalMinutos = Math.floor(segtotal / 60) %24;
+  const finalSegundos = Math.floor(segtotal) %60;
+
+  dia.innerHTML = `${finalDias}D`
+  hora.innerHTML =  formatoTempo (`${finalHoras}H`)
+  minuto.innerHTML = formatoTempo (`${finalMinutos}M`)
+  segundo.innerHTML = formatoTempo (`${finalSegundos}S`)
 }
-    
 
-// function formatoTempo(tempo){
-//     return tempo <=10? `${tempo}0` : tempo;
-// }
-
-
+function formatoTempo (tempo){
+    return tempo <10? `0${tempo}` : tempo;
+}
 
 countdown();
-setInterval(countdown , 1000) 
+setInterval(countdown, 1000 )
